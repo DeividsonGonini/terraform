@@ -18,7 +18,3 @@ provider "aws" {
   alias  = "sp"
   region = var.region_sp
 }
-
-output "bucket_arn" {
-value = aws_s3_bucket.backend-tf.arn
-}
