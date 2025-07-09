@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "bucket-backend" {
 
 resource "aws_s3_bucket" "bucket-aula" {
   provider = "aws.sp"
-  bucket   = var.bucket_name
+  bucket   = "${local.name}-${local.school}-${local.turma}-deivi"
   tags     = var.tags_dev
 }
 

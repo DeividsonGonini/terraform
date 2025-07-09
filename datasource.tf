@@ -8,7 +8,7 @@ data "aws_ami" "ubuntu" {
     values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
 
-    #Filtro do tipo de virtualização
+  #Filtro do tipo de virtualização
   filter {
     name   = "virtualization-type"
     values = ["hvm"]
