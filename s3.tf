@@ -14,3 +14,9 @@ resource "aws_s3_bucket" "bucket-aula3" {
   bucket   = "${var.bucket_name}-prod" #Exemplo Interpolação
   tags     = var.tags_prod
 }
+
+resource "aws_s3_bucket" "bucket-soat-deivi" {
+  provider = "aws.sp"
+  bucket   = "${data.aws_s3_bucket.soat.id}-3" #Exemplo Interpolação
+  tags     = var.tags_prod
+}
