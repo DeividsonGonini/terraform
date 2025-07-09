@@ -1,8 +1,12 @@
 #### Exemplo de Arquivo Locals ####
-locals{
+locals {
   instanceType = "t2.micro"
-    tags = {
+  tags = {
     environment = "production"
-    owner = "team"
-    }
+    owner       = "team"
+  }
+
+  name   = "fiap"
+  school = "postech"
+  turma  = "11soat"
 }

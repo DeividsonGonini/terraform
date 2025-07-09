@@ -16,8 +16,9 @@ variable "tags_dev" {
 variable "tags_prod" {
   type = map(string)
   default = {
-    Name        = "aula3"
+    Name        = "FIAP"
     Environment = "Production"
+    Fiap        = "postech"
   }
 }
 
@@ -29,4 +30,8 @@ variable "region_default" {
 
 variable "region_sp" {
   default = "sa-east-1"
+}
+
+variable "instance-type" {
+  default = "t2.micro"
 }
