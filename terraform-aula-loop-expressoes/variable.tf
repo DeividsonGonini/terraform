@@ -2,10 +2,10 @@
 variable "bucket_name" {
   type        = string
   description = "Nome utilizado no bucket"
-  default     = "bucket-aula7-deivi"
+  default     = "bucket-aula7-deivi-teste"
 }
 
-#Regex para extrair o que está depois do padrão definido (bucket-aula2-deivi-)
+#Regex para extrair o que está depois do padrão definido (bucket-aula7-deivi-)
 output "regex_bucket" {
   value = regex("bucket-aula7-deivi-(\\d+)", var.bucket_name)
 }
@@ -16,7 +16,7 @@ variable "bucket_name_list_1" {
   description = "Nome utilizado no bucket"
   default     = "bucket-aula7-deivi-2025, bucket-aula7-deivi-2022, bucket-aula7-deivi-2028"
 }
-#Regex que irá trazer apenas o primeiro valor encontrado que está depois do padrão definido (bucket-aula2-deivi-)
+#Regex que irá trazer apenas o primeiro valor encontrado que está depois do padrão definido (bucket-aula7-deivi-)
 output "bucket_name_list_1" {
   value = regex("bucket-aula7-deivi-(\\d+)", var.bucket_name_list_1)
 }
@@ -29,7 +29,7 @@ variable "bucket_name_list_2" {
   default     = "bucket-aula7-deivi-2025, bucket-aula7-deivi-2022, bucket-aula7-deivi-2028"
 }
 
-#Regex que irá percorrer a lista e trazer todos os valores encontrados que estão depois do padrão definido (bucket-aula2-deivi-)
+#Regex que irá percorrer a lista e trazer todos os valores encontrados que estão depois do padrão definido (bucket-aula7-deivi-)
 output "bucket_name_list_2" {
 value = regexall("bucket-aula7-deivi-(\\d+)", var.bucket_name_list_2)
 }
@@ -40,7 +40,7 @@ variable "bucket_name_list_3" {
   default     = "bucket-aula7-deivi-2025, bucket-teste-2028"
 }
 
-#Regex que irá percorrer a lista e trazer todos os valores encontrados que estão depois do padrão definido (bucket-aula2-deivi-)
+#Regex que irá percorrer a lista e trazer todos os valores encontrados que estão depois do padrão definido (bucket-aula7-deivi-)
 #Nesse caso trará somente o primeiro valor, pois o segundo não segue o padrão
 output "bucket_name_list_7" {
   value = regexall("bucket-aula7-deivi-(\\d+)", var.bucket_name_list_3)
