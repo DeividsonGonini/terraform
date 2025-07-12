@@ -1,6 +1,6 @@
 # Repositório criado nas aulas de Terraform
 
-## Estrutura das pastas
+## Estrutura das pastas 
 
 ### 1 - terraform-aulas
 
