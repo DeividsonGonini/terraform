@@ -24,4 +24,12 @@
 
 ### 4 - modules
 
- Diretório contendo as aulas do Terraform onde criamos módulos para serem utilizandos na criação de recursos.    
+ Diretório contendo as aulas do Terraform onde criamos módulos para serem utilizandos na criação de recursos.
+
+ ### 5 - terraform-aula-loop-expressoes
+
+ Diretório contendo as aulas do Terraform onde aprendemos loops e expressoes regulares (Regex).
+ 
+ ### 5 - terraform-aula-criacao-infra-aws
+
+ Diretório contendo as aulas do Terraform onde criamos toda a infraestrutura na AWS
