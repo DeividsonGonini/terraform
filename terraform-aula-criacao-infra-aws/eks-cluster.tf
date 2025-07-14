@@ -18,6 +18,8 @@ resource "aws_eks_cluster" "cluster" {
       aws_subnet.subnet_public[1].id,
       aws_subnet.subnet_public[2].id
     ]
+    #Adiciona o Security group para expor o serviço na internet
+    security_group_ids = [aws_security_group.sg.id]
   }
 
   # Declara dependencia da criação da IAM Role Police antes de criar o cluster
