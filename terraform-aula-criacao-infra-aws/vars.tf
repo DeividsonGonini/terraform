@@ -16,7 +16,7 @@ variable "tags" {
     Name = "fiap-terraform-aula",
     school = "FIAP",
     Environment = "Development",
-    Year = "2025
+    Year = "2025"
   }
 }
 
