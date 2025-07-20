@@ -5,18 +5,18 @@ provider "aws" {
 # Aula 8 p.03 
 # Kubectl_Manifest
 #https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs
-terraform {
-  required_providers {
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = "1.19.0"
-    }
-    kubernetes = {
-      source  = "hashicorp/kubernetes"
-      version = "2.36.0"
-    }
-  }
-}
+# terraform {
+#   required_providers {
+#     kubectl = {
+#       source  = "gavinbunney/kubectl"
+#       version = "1.19.0"
+#     }
+#     kubernetes = {
+#       source  = "hashicorp/kubernetes"
+#       version = "2.36.0"
+#     }
+#   }
+# }
 
 # provider "kubectl" {
 #   host                   = data.aws_eks_cluster.cluster.endpoint
